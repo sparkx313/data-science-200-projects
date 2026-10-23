@@ -1,10 +1,14 @@
 # 🧠 200 Data Science Projects Showcase
 
 [![GitHub License](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)](LICENSE)
-[![Projects Count](https://img.shields.io/badge/Projects-200%20Complete-brightgreen?style=for-the-badge)](#-master-project-index)
+[![Projects Catalogued](https://img.shields.io/badge/Projects-200%20Catalogued-yellow?style=for-the-badge)](#-master-project-index)
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
 Welcome to the **Master 200 Data Science Projects** repository! This curated collection spans from foundational exploratory data analysis to cutting-edge Generative AI, PyTorch Deep Learning, Computer Vision, and MLOps deployments.
+
+## Implementation status
+
+> This repository catalogs 200 project ideas. Most entries do not yet have runnable implementations. Project 001 is the first implemented project; the catalog count does not mean 200 projects are complete.
 
 ---
 

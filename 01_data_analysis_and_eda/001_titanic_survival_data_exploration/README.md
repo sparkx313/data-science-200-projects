@@ -1,26 +1,15 @@
 # Titanic Survival Data Exploration
 
-![Difficulty: 🟢 Beginner](https://img.shields.io/badge/Difficulty-🟢%20Beginner-blue?style=for-the-badge)
-![Category](https://img.shields.io/badge/Category-01%20data%20analysis%20and%20eda-emerald?style=for-the-badge)
+This project analyzes actual passenger rows from a Titanic CSV. It reports overall survival rate with a 95% Wilson interval, survival rates by sex, passenger class, embarkation port, and age group when those columns are present, plus age and fare summaries.
 
-## 📌 Project Overview
-Explore demographic factors affecting survival on the Titanic dataset.
+## Run
 
-### 🛠️ Tech Stack
-`Pandas` `Seaborn`
+No third-party Python packages are required. Use a passenger CSV with a binary Survived column, for example a standard Titanic train.csv.
 
----
+~~~sh
+python main.py --input path/to/train.csv --output titanic_survival_report.json
+~~~
 
-## 💡 Key Highlights & Workflow
-1. **Data Ingestion & Preprocessing**: Clean, inspect, and handle missing values or feature encodings.
-2. **Exploratory Data Analysis / Modeling**: Execute core statistical analysis or machine learning training loops.
-3. **Evaluation Metrics**: Measure outcomes using accuracy, RMSE, ROC-AUC, or custom business KPIs.
-4. **Summary Insights**: Key observations and recommendations based on model results.
+A different outcome column can be selected with --target-column. Accepted outcome values are 0/1, yes/no, true/false, survived/died, or dead. Rows with missing or unrecognized outcomes are counted and excluded from survival rates. Age, Sex, Pclass, Embarked, and Fare are optional; the report analyzes the fields that exist.
 
----
-
-## 🚀 How to Run
-Run the main script using Python:
-```bash
-python main.py
-```
+The JSON report contains counts, subgroup rates, confidence intervals, numeric summaries, and per-column missing-value counts. The analysis is descriptive; subgroup differences do not show that a characteristic caused survival. No data or results are fabricated or downloaded automatically.
